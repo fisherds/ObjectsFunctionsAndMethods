@@ -2,14 +2,13 @@
 This module lets you practice correcting SYNTAX (notation) errors.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  September 2016.
+         their colleagues and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-# ----------------------------------------------------------------------
+########################################################################
 # TODO: 2.
 #   Locate the syntax (notation) errors in this file
-#   by looking for red Xs (ERRORs) and yellow WARNING signs
-#   to the left of the line numbers.
+#   by looking for red underlines.
 #
 #   For each error, try to make sense of its message.
 #     -- Hover or expand as needed -- make sure you see the message!
@@ -17,17 +16,18 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #   Then fix the errors, one by one.
 #     -- Fixing one error may bring up additional errors
 #          (after a few seconds or when you run or save the module).
-#     -- Each time, fix the ERROR (red X)
-#          that is currrently nearest the TOP of the module.
-#     -- Often the SOURCE of the error is on the line just BEFORE
-#          the line with a red X.  Sometimes it is LATER in the module.
+#     -- Each time, fix the ERROR that is currrently nearest the TOP of the module.
+#     -- Often the SOURCE of the error can be on the line just BEFORE
+#          the line with a red underline.
 #     -- New errors may appear when you RUN the module.
 #
-#    Finish by RUNNING the corrected program
-#    and making sure that it RUNS CORRECTLY.
+#    Finish by RUNNING the corrected program and making sure that it RUNS CORRECTLY.
 #    That is, make sure that (per the green doc-strings) the program
 #    prints some calculated values and makes a Turtle do some things.
-# ----------------------------------------------------------------------
+#
+#  When complete Commit and Push your work (as always).
+#
+########################################################################
 
 import rosegraphics as rg
 import math

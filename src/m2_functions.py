@@ -1,11 +1,24 @@
 """
-Lets you practice DEFINING and CALLING
+Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  September 2016.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
-#               Also look for other  TODO's  LATER in this file!
+         their colleagues and PUT_YOUR_NAME_HERE.
+"""
+
+########################################################################
+#
+# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+#
+#   Allow this file to use the rosegraphics.py file by marking the src
+#   directory as a "Sources Root".  Do that by right clicking on the src folder,
+#   then selector  Mark Directory As --> Sources Root
+#
+#   Example the import lines below and watch the red underlines disappear as you do that step.
+#   You will do that once for every project that uses rosegraphics so get used to it. :)
+#
+#   Then run this module and look for more TO DO's later in the file.
+########################################################################
 
 import rosegraphics as rg
 import random
@@ -93,8 +106,6 @@ def turtle3():
 ########################################################################
 #
 # TODO: 2.
-#   (Yes, that means for YOU to DO things per these instructions:)
-#
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -110,16 +121,6 @@ def turtle3():
 #
 #     ** ASK QUESTIONS if you are uncertain. **
 #
-#   When you believe you understand the answers
-#   to all of the above questions, change the above TODO to DONE.
-#
-########################################################################
-
-
-########################################################################
-# TODO: 3.
-#   RUN this module.
-#
 #   RELATE what is DRAWN to the CODE above.  Be sure you understand:
 #       -- WHEN does the code in   main   run?
 #       -- WHEN does the code in   turtle1   run?
@@ -130,13 +131,13 @@ def turtle3():
 #     ** ASK QUESTIONS if you are uncertain. **
 #
 #   When you believe you understand the answers
-#   to all of the above questions, change the above TODO to DONE.
+#   to all of the above questions, change the above TO DO to DONE.
 #
 ########################################################################
 
 ########################################################################
 #
-# TODO: 4.
+# TODO: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -145,26 +146,20 @@ def turtle3():
 #   lines between function definitions, so be sure to do so.
 #
 #   Your new function should:
-#
-#    1. Define a SimpleTurtle (as   turtle3   and other functions did).
-#
+#    1. Define a SimpleTurtle (as   turtle3   as other functions did).
 #    2. Set your SimpleTurtle's
 #               pen
 #       to a new rg.Pen with a color and thickness of your own choosing.
-#       See the  COLORS.pdf  and  COLORS.txt  files in this project
-#       for lists all legal color-names.
-#
+#       See the COLORS.txt  file in this project for a list of legal color-names.
 #    3. Make your SimpleTurtle move around a bit.
 #
 # ----------------------------------------------------------------------
 #           ** IMPORTANT:                 **
 #           ** Nothing fancy is required. **
-#           ** KISS.                      **
 #           ** Save fancy stuff for exercises later today. **
 # ----------------------------------------------------------------------
 #
-#   BTW, if you see a RED mark to the left of the line number
-#     of one of your lines, that means that there is
+#   BTW, if you see a RED underline, that means that there is
 #     a SYNTAX (notation) error at that line or elsewhere.
 #   Get help as needed to fix any such errors.
 #
@@ -172,7 +167,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# TODO: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -188,9 +183,9 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 6.
-#   The previous two TODOs IMPLEMENTED a function (TODO 4)
-#   and TESTED that function (TODO 5).
+# TODO: 5.
+#   The previous two TODOs IMPLEMENTED a function (TO DO 3)
+#   and TESTED that function (TO DO 4).
 #
 #   Now implement AND test one more function, defining it immediately
 #   below the definition of your   turtle4   function.
@@ -206,16 +201,21 @@ def turtle3():
 # ----------------------------------------------------------------------
 #           ** IMPORTANT:                 **
 #           ** Nothing fancy is required. **
-#           ** KISS.                      **
 #           ** Save fancy stuff for exercises later today. **
 # ----------------------------------------------------------------------
 #
 #  Get help as needed on this (and every!) exercise!
 #
-#  As always COMMIT your work (which turns it in) as often as you want,
-#  but for sure after you have tested it and believe that it is correct,
-#  by selecting this module
-#       and doing     SVN ~ Commit.
+#  As always COMMIT and Push your work as often as you want, but for sure after
+#  you have tested it and believe that it is correct.
+#
+#   Reminder of those steps...
+#   COMMIT your work by selecting VCS from the menu bar, then select Commit Changes
+#   Make sure only the files you want to commit are checked and optionally
+#   add a quick Commit message to describe your work.  Then hover over the
+#   Commit button and select Commit and Push.  Commit saves the work to
+#   your computer.  "and Push" saves a copy of your work up into your Github
+#   repository (saving to the cloud is a better way to permanently safe work).
 #
 ########################################################################
 
