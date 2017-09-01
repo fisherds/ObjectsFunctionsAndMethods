@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Dave Fisher.
+"""
 
 ########################################################################
 #
-# TODO: 2.
+# TO DO: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -78,11 +78,14 @@ def main():
 
     jump_and_move_turtle(100, 50, 200, -100)
     turtle = rg.SimpleTurtle('square')
+    turtle.speed = 20
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
 
     window.close_on_mouse_click()
 
@@ -101,8 +104,9 @@ def jump_and_move_turtle(x1, y1, x2, y2):
     # Instead, ** CALL ** this function as needed in the other problems.
     # ------------------------------------------------------------------
     jumper = rg.SimpleTurtle()
+    jumper.speed = 20
     jumper.pen = rg.Pen('magenta', 20)
-    jumper.speed = 1
+    # jumper.speed = 1
 
     jumper.pen_up()
     jumper.go_to(rg.Point(x1, y1))
@@ -150,6 +154,7 @@ def turtle3():
     #   Do NOT touch this function - it has no TO DO in it.
     # ------------------------------------------------------------------
     maja = rg.SimpleTurtle()
+    maja.speed = 20
     maja.pen = rg.Pen('green', 10)
     maja.paint_bucket = rg.PaintBucket('black')
 
@@ -172,10 +177,17 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # TO DO: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
+    dave = rg.SimpleTurtle()
+    dave.pen = rg.Pen('brown', 5)
+    dave.speed = 20
+    dave.forward(150)
+    dave.left(90)
+    dave.forward(50)
+    dave.backward(100)
 
 
 def try_functions():
@@ -186,7 +198,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # TO DO: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -197,6 +209,9 @@ def try_functions():
     # HINT: see   jump_and_move_turtle   above.
     #
     ####################################################################
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
 
 def try_methods_and_functions():
@@ -232,16 +247,32 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # TO DO: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
-    #    Keep reading the rest of this TODO before doing the above!
+    #    Keep reading the rest of this TO DO before doing the above!
     #
     # IMPORTANT: This function should ** CALL ** the
     #   draw_many_squares
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
+    dave = rg.SimpleTurtle()
+    dave.pen = rg.Pen('blue', 5)
+    dave.backward(150)
+    dave.speed = 1
+    draw_many_squares(dave, 2, 100, 30)
+    dave.speed = 5
+    dave.pen.color = 'red'
+    draw_many_squares(dave, 10, 50, 15)
+    dave.speed = 100
+    dave.pen.thickness = 35
+    draw_many_squares(dave, 8, 300, 60)
+    dave.pen = rg.Pen('black', 3)
+    dave.backward(200)
+    dave.draw_circle(30)
+    dave.draw_square(50)
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
