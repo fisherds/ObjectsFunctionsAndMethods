@@ -34,6 +34,8 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -47,6 +49,7 @@ def turtle1():
     Makes that SimpleTurtle draw a yellow-filled circle.
     """
     ada = rg.SimpleTurtle('square')
+    ada.speed = 20
 
     ada.pen = rg.Pen('aquamarine', 30)
     ada.paint_bucket = rg.PaintBucket('yellow')
@@ -63,6 +66,7 @@ def turtle2():
     draws a cool shape, and return to where it started from.
     """
     grace = rg.SimpleTurtle('triangle')
+    grace.speed = 20
 
     grace.pen = rg.Pen('blue', 15)
     grace.paint_bucket = rg.PaintBucket('magenta')
@@ -94,6 +98,7 @@ def turtle3():
     and then draw a black-filled circle.
     """
     maja = rg.SimpleTurtle()
+    maja.speed = 20
     maja.pen = rg.Pen('black', 10)
 
     maja.forward(300)
@@ -103,9 +108,46 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    """
+    Constructs a default SimpleTurtle.
+    Makes that SimpleTurtle move around some.
+    """
+    dave = rg.SimpleTurtle()
+    dave.pen = rg.Pen('red', 5)
+    dave.speed = 20
+    dave.right(90)
+    dave.forward(100)
+    dave.begin_fill()
+    dave.draw_circle(50)
+    dave.end_fill()
+
+
+def turtle5():
+    """
+    Constructs two SimpleTurtles that move around some.
+    """
+    dave = rg.SimpleTurtle('turtle')
+    dave.pen = rg.Pen('yellow', 5)
+    dave.speed = 3
+    dave.right(180)
+    dave.forward(200)
+    dave.begin_fill()
+    dave.draw_circle(50)
+    dave.end_fill()
+
+    matt = rg.SimpleTurtle('turtle')
+    matt.pen = rg.Pen('magenta', 5)
+    matt.speed = 3
+    matt.right(135)
+    matt.forward(300)
+    matt.begin_fill()
+    matt.draw_circle(50)
+    matt.end_fill()
+
 ########################################################################
 #
-# TODO: 2.
+# TO DO: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -137,7 +179,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# TO DO: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -167,7 +209,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# TO DO: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +225,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# TO DO: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
