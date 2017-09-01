@@ -4,7 +4,7 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  September 2016.
+         their colleagues and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
@@ -33,10 +33,9 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #   The statement
 #        nadia.forward(100)
-#   CALLS the   forward   METHOD on nadia, sending that method
-#   the number 100 and making the method run (execute).
+#   CALLS the   forward   METHOD on nadia, sending that method the number 100 and making the method run (execute).
 #
-#   We   ** define **   FUNCTIONS to give NAMES to blocks of code.
+#   We   ** define **   FUNCTIONS to give NAMES to blocks of code (note FUNCTIONS and METHODS are different).
 #   For example:
 #
 #      def turtle3():
@@ -45,79 +44,20 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #          maja.paint_bucket = rg.PaintBucket('black')
 #            ...
 #
-#   We   ** call **   FUNCTIONS (that is, we make them run)
-#   in a way that is similar to how we call METHODS,
-#   but WITHOUT the DOT notation.
+#   We   ** call **   FUNCTIONS (that is, we make them run) in a way that is similar to how we call METHODS,
+#   but WITHOUT the DOT notation.  For example
+#      def main():
+#          turtle3()
 #
-#   For example, we make the code in the definition of  main  execute
-#   (run) by using the statement:
-#       main()
-#   and we make the code in the definition of  print  execute,
-#   sending it the string 'Hello Rose' by using:
-#       print('Hello Rose')
-#
-#   No dot -- just the name of the function, parentheses, and
-#   the information (if any) the function needs.
-#
-#   SUMMARY:
-#   Suppose that we have the statement:
-#        bilbo = rg.SimpleTurtle()
-#   Then:
-#     -- If   draw_many_squares   is a FUNCTION,
-#        then we can CALL that FUNCTION by a statement like:
-#             draw_many_squares(bilbo, 9, 100, 30)
-#
-#     -- If   draw_square   is a METHOD,
-#        then we can CALL that METHOD by a statement like:
-#             bilbo.draw_square(100)
-#
-#     ** ASK QUESTIONS if you are unclear about any of the above. **
+#   Run this module and review the existing code.  Can you identify the functions calls and methods calls?
 #
 #   When you believe you understand the differences and similarities
-#   between calling a FUNCTION and calling a METHOD,
-#   change the above TODO to DONE.
-#
-########################################################################
-
-########################################################################
-#
-# TODO: 3.
-#   RUN this program.  Then:
-#
-#     a. Read the green DOC-STRING of the   main   function below.
-#        Summarize here, in 10 words or fewer, what does  MAIN  do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
-#
-#        Not HOW it does it.  Not WHY it does it.  Just WHAT it does.
-#        (Hint: a suitable answer is   "Calls 3 functions to test them."
-#
-#
-#     b. Read the green DOC-STRING of the   jump_and_move_turtle
-#        function below.  Summarize here, in 10 words or fewer,
-#        what does  JUMP_AND_MOVE_TURTLE  do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
-#
-#     c. Read the green DOC-STRINGs of the   draw_many_squares
-#        function below.  Summarize here, in 10 words or fewer,
-#        what does  DRAW_MANY_SQUARES  do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
-#
-#     d. Read the green DOC-STRINGs of the   turtle3
-#        function below.  Summarize here, in 10 words or fewer,
-#        what does  TURTLE3  do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
-#
-#   ASK QUESTIONS ** NOW ** if you do not understand WHAT those four
-#   functions do.  You are not required to understand HOW they do it;
-#   just WHAT they do (as described by their green doc-strings).
-#
-#   When you believe you understand WHAT those four functions do,
-#   change the above TODO to DONE.
+#   between calling a FUNCTION and calling a METHOD, change the above TO DO to DONE.
 #
 ########################################################################
 
 # ----------------------------------------------------------------------
-# There are MORE TODO's further down in this module!
+# There are MORE TODOs further down in this module!
 # ----------------------------------------------------------------------
 
 import rosegraphics as rg
@@ -141,7 +81,7 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
 
-    # When the TODO's ask you to test YOUR code, put YOUR tests here:
+    # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
 
     window.close_on_mouse_click()
@@ -155,7 +95,7 @@ def jump_and_move_turtle(x1, y1, x2, y2):
     """
     # ------------------------------------------------------------------
     # Students:
-    #   Do NOT touch this function - it has no TODO in it.
+    #   Do NOT touch this function - it has no TO DO in it.
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the other problems.
@@ -190,7 +130,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
     """
     # ------------------------------------------------------------------
     # Students:
-    #   Do NOT touch this function - it has no TODO in it.
+    #   Do NOT touch this function - it has no TO DO in it.
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the other problems.
@@ -207,7 +147,7 @@ def turtle3():
     """
     # ------------------------------------------------------------------
     # Students:
-    #   Do NOT touch this function - it has no TODO in it.
+    #   Do NOT touch this function - it has no TO DO in it.
     # ------------------------------------------------------------------
     maja = rg.SimpleTurtle()
     maja.pen = rg.Pen('green', 10)
@@ -232,7 +172,7 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its green doc-string above.
+    # TODO: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
@@ -246,10 +186,10 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its green doc-string above.
+    # TODO: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
-    #    Keep reading the rest of this TODO before doing the above!
+    #    Keep reading the rest of this TO DO before doing the above!
     #
     # IMPORTANT: This function requires
     #   ** exactly 3 lines **
@@ -292,7 +232,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 6. Implement this function, per its green doc-string above.
+    # TODO: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TODO before doing the above!
